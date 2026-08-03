@@ -7,50 +7,96 @@
 <title>Entidades de Control y Regulatorias</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family: Georgia, serif;
-    background:#ffffff;
-    margin:20px;
+    font-family:Georgia, serif;
+    background:#fff;
+    padding:10px;
 }
 
 h2{
     text-align:center;
-    color:#222;
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
 }
 
 table{
     width:100%;
     border-collapse:collapse;
+    table-layout:fixed;
 }
 
-th, td{
+th,td{
     border:2px solid #000;
-    padding:10px;
+    padding:12px;
     text-align:left;
+    vertical-align:top;
+    word-wrap:break-word;
 }
 
 th{
     background:#f2f2f2;
-    font-weight:bold;
+    font-size:18px;
+}
+
+td{
+    font-size:16px;
 }
 
 a{
     color:#0057d9;
-    font-weight:bold;
     text-decoration:none;
+    font-weight:bold;
 }
 
 a:hover{
     text-decoration:underline;
 }
+
+@media (max-width:768px){
+
+h2{
+    font-size:20px;
+}
+
+th{
+    font-size:15px;
+}
+
+td{
+    font-size:14px;
+    padding:8px;
+}
+
+table{
+    table-layout:auto;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <h2>📊 ENTIDADES DE CONTROL Y REGULATORIAS</h2>
 
+<div class="table-container">
+
 <table>
+
 <tr>
 <th>Entidad</th>
 <th>Acceso directo</th>
@@ -87,13 +133,16 @@ a:hover{
 </tr>
 
 <tr>
-<td><b>Términos y Condiciones</b><br>
+<td>
+<b>Términos y Condiciones</b><br><br>
 Para conocer los lineamientos completos sobre el uso de la plataforma, derechos y responsabilidades de los usuarios, consulte el documento oficial de <b>TU ALIANZA HOGAR</b>.
 </td>
 <td><a href="https://drive.google.com/file/d/1kf1CPNBtnFPnm5MqM_A2HXH0VkhiekpF/view?usp=drive_link" target="_blank">Ver documento</a></td>
 </tr>
 
 </table>
+
+</div>
 
 </body>
 </html>
